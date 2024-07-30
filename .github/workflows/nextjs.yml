@@ -50,12 +50,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ env.manager }}-cache
 
       - name: Restore cache
         uses: actions/cache@v4
         with:
           path: |
+            learn2code/node_modules
             learn2code/.next/cache
           key: ${{ runner.os }}-nextjs-${{ hashFiles('learn2code/package-lock.json', 'learn2code/yarn.lock') }}-${{ hashFiles('learn2code/**.[jt]s', 'learn2code/**.[jt]sx') }}
           restore-keys: |
