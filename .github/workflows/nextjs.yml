@@ -75,7 +75,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: learn2code/out
+          path: learn2code/.next/out
 
   deploy:
     environment:
