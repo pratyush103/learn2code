@@ -48,6 +48,11 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+
+      - name: List files in learn2code
+        run: ls -al
+        working-directory: learn2code
+
       - name: Setup Node
         uses: actions/setup-node@v4
         env:
