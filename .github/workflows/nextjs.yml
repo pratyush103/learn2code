@@ -69,10 +69,13 @@ jobs:
         run: ${{ env.runner }} next build
         working-directory: learn2code
 
+      - name: List files in learn2code after build
+        run: ls -al learn2code
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: learn2code/out
 
   deploy:
     environment:
@@ -84,3 +87,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
