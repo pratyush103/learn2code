@@ -29,7 +29,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-     working-directory: learn2code
+     working-directory: ./learn2code
     steps:
       - name: Checkout
         uses: actions/checkout@v4
