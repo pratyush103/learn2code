@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: learn2code
+        working-directory: learn2code/learn2code/learn2code
     steps:
       - name: Checkout
         uses: actions/checkout@v4
