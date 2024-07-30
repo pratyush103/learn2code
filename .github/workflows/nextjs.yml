@@ -55,8 +55,6 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v4
-        run:
-        working-directory: learn2code
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
